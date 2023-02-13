@@ -1,0 +1,221 @@
+
+
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BTCXEM</title>
+	<link href="/css/bs_min.css" rel="stylesheet" type="text/css">
+    <script src="/js/jquery_min.js"></script>
+    <script src="/js/bs_min.js"></script>
+    <link href="/layui/css/layui.css" rel="stylesheet" type="text/css"> <script src="/layui/layui.all.js"></script><link id="layuicss-laydate" rel="stylesheet" href="/layui/css/modules/laydate/default/laydate.css?v=5.0.9" media="all"><link id="layuicss-layer" rel="stylesheet" href="/layui/css/modules/layer/default/layer.css?v=3.1.1" media="all"><link id="layuicss-skincodecss" rel="stylesheet" href="/layui/css/modules/code.css" media="all">
+    <style>
+        .pages a,
+			.pages span {
+				display: inline-block;
+				padding: 2px 5px;
+				margin: 0 1px;
+				border: 1px solid #f0f0f0;
+				-webkit-border-radius: 3px;
+				-moz-border-radius: 3px;
+				border-radius: 3px;
+			}
+			
+			.pages a,
+			.pages li {
+				display: inline-block;
+				list-style: none;
+				text-decoration: none;
+				color: #58A0D3;
+			}
+			
+			.pages a.first,
+			.pages a.prev,
+			.pages a.next,
+			.pages a.end {
+				margin: 0;
+			}
+			
+			.pages a:hover {
+				border-color: #50A8E6;
+			}
+			
+			.pages span.current {
+				background: #50A8E6;
+				color: #FFF;
+				font-weight: 700;
+				border-color: #50A8E6;
+			}
+			textarea{
+			    resize: none;
+			}
+    </style>
+    <script>
+        window.onload = function(){
+            $('input').attr('autocomplete','off')
+        }
+    </script>
+    <title></title>
+  <style>
+        body,html{
+              background-color: #ededed;
+              padding: 0;
+              margin: 0;
+              margin-bottom: 100px;
+        }
+        h1,h2,h3,h4,h5,h6,h7{margin:0;padding:0}
+        .bottomTable{
+            width: 86%;
+            margin: 20px auto;
+            border-radius:12px;
+            background-color: #fff;
+            padding: 0 2% 5px;
+        }
+        .bottomTable tbody{
+            text-align: center;
+        }
+        .bottomTable caption{
+            line-height: 40px;
+        }
+        .topBox{
+            width: 86%;
+            margin: 20px auto;
+        }
+        .topBox .row .control-label{
+            line-height: 34px;
+        }
+        input[type="file"] {
+            display: block;
+            width: 100%;
+            height: 34px;
+            padding: 6px 12px;
+            font-size: 14px;
+            line-height: 1.42857143;
+            color: #555;
+            background-color: #fff;
+            background-image: none;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+            box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+            -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+            -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+            transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+        }
+        #inputfile{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            opacity: 0;
+            height: 100%;
+        }
+        .row{
+            margin-bottom: 10px;
+        }
+        /*移动端样式*/
+      @media only screen and (max-width: 600px) {
+          
+      }
+  </style><style></style></head>
+  
+  <body>
+
+ 	 <span style="display:block;border:2px solid #7670d9;border-radius:5px;padding:10px;margin-left:9%;margin-right:7%;margin-top:50px; margin-bottom:10px">
+        <p style="color:red">Withdrawal to your registered ฿itcoin wallet address has been disabled because you 
+            haven't withdrawn for more than 365 days. To reactivate withdrawal you need to contact 
+            customer care and provide your secure key you created during account registration.</p>
+            <br />
+         <p>You will still be able to <a href='/xinbei/memtrans.php' style ="color:blue;font-weight:bold">carry out transfers</a> and transactions from your account 
+                    balance to other BTCXEM VIP members without your secure key for the next 6 months.</p>
+    </span>
+
+
+      <div class="topBox">
+          <form id="" action="" method="get" accept-charset="utf-8" enctype="multipart/form-data">
+
+          <div class="row">
+                  <div class="form-group col-sm-12">
+                      <label for="firstname" class="col-sm-2 control-label">Account Balance:</label>
+                      <span class="col-sm-3" style="line-height:34px;color:green">
+                            <strong>฿ 58.81890</strong>
+            	      </span>
+                  </div>
+              </div>
+              
+              
+        <div class="row">
+            <div class="form-group col-sm-12">
+            	<label for="firstname" class="col-sm-2 control-label">Wallet Address:</label>
+            	<div class="col-sm-3">
+            		<input type="text" name="walletAddr" class="form-control"  autocomplete="off" disabled>
+            	</div>
+            </div>
+          </div>
+
+        <div class="row">
+            <div class="form-group col-sm-12">
+            	<label for="firstname" class="col-sm-2 control-label">Withdraw Bitcoin:</label>
+            	<div class="col-sm-3">
+            		<input type="number" oninput="$('#shouxufei').text((this.value*0.00).toFixed(2))" class="form-control jine" autocomplete="off" disabled>
+            	</div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="form-group col-sm-12">
+            	<label for="firstname" class="col-sm-2 control-label">Secure Key:</label>
+            	<div class="col-sm-3">
+            		<input type="password" class="form-control password" autocomplete="off" disabled>
+            	</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-sm-12">
+            	<label for="firstname" class="col-sm-2 control-label"></label>
+            	<div class="col-sm-3">
+            	    <input class="form-control" id="tijiao" type="button" value="Confirm Withdrawal" autocomplete="off" disabled>
+            	</div>
+            </div>
+          </div>
+          </form>
+      </div>
+      <div class="bottomTable">
+          <table class="table table-hover table-striped" style="word-break:break-all; word-wrap:break-all;">
+        	<caption style="color:#6046ff">Withdrawal History</caption>
+        	<tbody>
+        	    <tr>
+        			<td>Address (฿TC)</td>
+        			<td>Units</td>
+        			<td>Status</td>
+        			<td>Time</td>
+        		</tr>
+        		         	</tbody>
+        </table>
+      </div>
+    <script type="text/javascript" src="/Public/Home/js/jquery.uploadify-3.1.min.js" charset="utf-8"></script>
+    <script>
+        $('#tijiao').on('click',function(){
+            var num = $('.jine').val();//金额
+            var bankname = $('.bankname').val();//银行名称
+            var banknumber = $('.banknumber').val();//金额
+            var password = $('.password').val();//金额
+            if(!num||num<=0){
+                layer.msg('Enter the correct Bitcoin units');return;
+            }
+            // if(num%500!=0){
+            //     layer.msg('Minimum withdrawal amount is 500');return;
+            // }
+            if(!password){
+                layer.msg('Enter your secure key');return;
+            }if(password){
+                layer.msg('Invalid secure key');return;
+            }
+            $(this).attr('disabled','disabled').val('withdrawing...');
+            
+        })
+        
+    </script>
+  
+</body></html>
